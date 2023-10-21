@@ -35,6 +35,9 @@ export interface FilterProps{
     fuel :string;
     limit : number;
 }
+export interface HomeProps {
+    searchParams: FilterProps;
+  }
 export interface OptionProps {
 title : string
 value: string
@@ -48,3 +51,10 @@ export interface SHowMoreProps {
     pageNumber : number,
     isNext : boolean;
 }
+export interface SearchParamsProps {
+    manufacturer: string;
+    model: string;
+    year: string;
+    fuel: number;
+    limit: string;
+  }
